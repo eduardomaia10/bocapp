@@ -265,13 +265,18 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text'    => ' Cadastros',
+            'text'    => 'Cadastros',
             'icon'    => 'fas fa-folder-plus',
             'submenu' => [
                 [
                     'text' => 'Produtos',
                     'route'  => 'product.index',
-                    'icon' => 'fab fa-product-hunt'
+                    'icon' => 'fas fa-pencil-ruler'
+                ],
+                [
+                    'text' => 'Clientes',
+                    'route'  => 'client.index',
+                    'icon' => 'far fa-address-card'
                 ],
 /*                 [
                     'text'    => 'level_one',
