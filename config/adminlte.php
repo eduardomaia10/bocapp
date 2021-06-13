@@ -226,7 +226,7 @@ return [
 
     'menu' => [
         // Navbar items:
-        [
+/*         [
             'type'         => 'navbar-search',
             'text'         => 'search',
             'topnav_right' => true,
@@ -234,10 +234,10 @@ return [
         [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
-        ],
+        ], */
 
         // Sidebar items:
-        [
+/*         [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
         ],
@@ -252,25 +252,26 @@ return [
             'icon'        => 'far fa-fw fa-file',
             'label'       => 4,
             'label_color' => 'success',
-        ],
-        ['header' => 'account_settings'],
+        ], */
+        ['header' => 'SYSTEM SETTINGS'],
         [
             'text' => 'profile',
-            'url'  => 'admin/settings',
+            'url'  => '#',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
             'text' => 'change_password',
-            'url'  => 'admin/settings',
+            'url'  => '#',
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text'    => 'Cadastros',
-            'icon'    => 'fas fa-fw fa-share',
+            'text'    => ' Cadastros',
+            'icon'    => 'fas fa-folder-plus',
             'submenu' => [
                 [
                     'text' => 'Produtos',
                     'route'  => 'product.index',
+                    'icon' => 'fab fa-product-hunt'
                 ],
 /*                 [
                     'text'    => 'level_one',

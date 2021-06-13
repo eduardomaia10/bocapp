@@ -20,7 +20,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h3>Cadastro de Produtos</h3>
+                        <h3><strong>Cadastro de Produtos</strong></h3>
                     </div>
                     <div class="card-body">
                         <table class="table table-striped table-hover">
@@ -97,7 +97,15 @@
                                 @endif
                             </tbody>
                         </table>
-                        {!! $products->links() !!}
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item"><a class="page-link" href="/product">Previous</a></li>
+                              <li class="page-item"><a class="page-link" href="/product?page=1">1</a></li>
+                              <li class="page-item"><a class="page-link" href="/product?page=2">2</a></li>
+                              <li class="page-item"><a class="page-link" href="/product?page=3">3</a></li>
+                              <li class="page-item"><a class="page-link" href="/product?page=3">Next</a></li>
+                            </ul>
+                          </nav>
                     </div>
                 </div>
             </div>
