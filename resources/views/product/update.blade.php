@@ -61,7 +61,7 @@
     </body>
 
     <script>
-        document.getElementById("ppreco").addEventListener("change", function(){
+        document.getElementById("pprice").addEventListener("change", function(){
        this.value = parseFloat(this.value).toFixed(2);
     });
     </script>
