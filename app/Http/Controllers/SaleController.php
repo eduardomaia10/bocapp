@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Product;
+use App\Models\Sale;
 use Illuminate\Support\Facades\DB;
 
 
-class ProductController extends Controller
+class SaleController extends Controller
 {
     /**
      * Write code on Method
@@ -16,10 +16,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-      $products = Product::latest()->paginate(10);
+      $sales = Sale::latest()->paginate(10);
 
-      return view('product.index', compact('products'));
-
+      return view('sale.index', compact('sales'));
     }
 
     /**
@@ -29,7 +28,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view("product.create");
+        return view("sale.create");
     }
 
     /**
@@ -42,9 +41,9 @@ class ProductController extends Controller
 
         $input = $request->all();
 
-        Product::create($input);
+        Sale::create($input);
 
-        return redirect()->route('product.index');
+        return redirect()->route('sale.index');
     }
 
     /**
@@ -54,9 +53,9 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-       $product = Product::find($id);
+       $sale = Sale::find($id);
 
-       return view('product.update',compact('product'));
+       return view('sale.update',compact('sale'));
     }
 
     /**
@@ -69,10 +68,10 @@ class ProductController extends Controller
     {
         $input = $request->all();
 
-        $update = Product::find($id);
+        $update = Sale::find($id);
         $update->update($input);
 
-        return redirect()->route('product.index');
+        return redirect()->route('sale.index');
     }
 
     /**
@@ -83,9 +82,9 @@ class ProductController extends Controller
 
     public function show($id)
     {
-        $product = Product::find($id);
+        $sale = Sale::find($id);
 
-        return view('product.show', compact('product'));
+        return view('sale.show', compact('sale'));
     }
 
     /**
@@ -98,11 +97,11 @@ class ProductController extends Controller
     {
         $input = $request->all();
 
-        $product = Product::find($id);
+        $sale = Sale::find($id);
 
-        $product->delete($input);
+        $sale->delete($input);
 
-        return redirect()->route('product.index');
+        return redirect()->route('sale.index');
     }
     /**
      * Write code on Method

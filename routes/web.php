@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\SaleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +46,18 @@ Route::get('client/edit/{id}', [ClientController::class ,"edit"])-> name("client
 Route::put('client/update/{id}', [ClientController::class ,"update"])-> name("client.update");
 Route::delete('client/delete/{id}', [ClientController::class ,"destory"])-> name("client.delete");
 Route::get('client/show/{id}', [ClientController::class ,"show"])-> name("client.show");
+/*
+// QtController
+Route::get('/dashboard/show', [QtprodController::class,"show"])->name("dashboard.show"); */
+
+// SaleController
+Route::get('sale/create', [SaleController::class ,"create"])->name("sale.create");
+Route::get('/sale', [SaleController::class,"index"])->name('sale.index');
+Route::post('sale/store', [SaleController::class ,"store"])->name("sale.store");
+Route::get('sale/edit/{id}', [SaleController::class ,"edit"])-> name("sale.edit");
+Route::put('sale/update/{id}', [SaleController::class ,"update"])-> name("sale.update");
+Route::delete('sale/delete/{id}', [SaleController::class ,"destory"])-> name("sale.delete");
+Route::get('sale/show/{id}', [SaleController::class ,"show"])-> name("sale.show");
 
 
 });

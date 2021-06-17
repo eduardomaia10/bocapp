@@ -279,34 +279,22 @@ return [
                     'route'  => 'client.index',
                     'icon' => 'far fa-address-card'
                 ],
-/*                 [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ], */
+            ],
+        ],
+        [
+            'text'    => 'Movimentações',
+            'icon'    => 'fas fa-chart-line',
+            'submenu' => [
                 [
-                    /* 'text' => 'Clientes',
-                    'route'  => 'client.index', */
+                    'text' => 'Vendas',
+                    'route'  => 'sale.index',
+                    'icon' => 'fas fa-piggy-bank'
                 ],
+                /* [
+                    'text' => 'Clientes',
+                    'route'  => 'client.index',
+                    'icon' => 'far fa-address-card'
+                ], */
             ],
         ],
 /*         ['header' => 'labels'],

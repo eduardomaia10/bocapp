@@ -23,7 +23,7 @@
                         <h3><strong>Cadastro de Clientes</strong></h3>
                     </div>
                     <div class="card-body">
-                        <table class="table table-striped table-hover">
+                        <table class="table table-responsive table-sm table-striped">
                             <thead class="bg-dark text-white">
                                 <tr>
                                     <th>Item</th>

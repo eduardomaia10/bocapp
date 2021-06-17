@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>BocApp | Dashboard Gerencial</h1>
 @stop
 
 @section('content')
@@ -15,7 +15,7 @@
     theme="info" url="#" url-text="More info" loading/>
 
 {{-- Themes --}}
-<x-adminlte-small-box title="424" text="Views" icon="fas fa-eye text-dark"
+<x-adminlte-small-box title="{{-- {{ route('dashboard' ,$productqt->count()) }} --}} 666" text="Clientes" icon="fas fa-eye text-dark"
     theme="teal" url="#" url-text="View details"/>
 
 <x-adminlte-small-box title="Downloads" text="1205" icon="fas fa-download text-white"
